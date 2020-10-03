@@ -81,7 +81,7 @@ const info = [
                 } 
                 console.log("Hurray!");  
             });
-            fsfunc.append("README.md", "# " + response.title + "\n");
+            fsfunc.append("README.md", "# Title:" + " " + response.title + "\n");
             fsfunc.append("README.md", "### Description:" + "\n" + response.description + "\n" ); 
             fsfunc.append("README.md", "## Table of Contents:" + "\n" + "- " + response.contents.split(", ").join("\n" + "- ") + "\n");
             fsfunc.append("README.md", "### Installation Istructions:" + "\n" + response.installation + "\n" ); 
