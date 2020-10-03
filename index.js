@@ -4,6 +4,18 @@ const Fsfunc = require("./fsfunc");
 
 const fsfunc = new Fsfunc();
 
+// REQUIRED INFO
+// Title
+// Description
+// Table of Contents
+// Installation
+// Usage
+// License
+// Contributing
+// Tests
+// Questions
+
+
 const info = [
     {   
         type: "input", 
@@ -51,7 +63,6 @@ const info = [
         message: "Run Tests:",
         choices: ["Yes", "No"]
     }, 
-// { type: "input", name: "questions1", message: "Enter the url of your profile picture", }, 
     { type: 
         "input", 
         name: "questions1", 
@@ -82,17 +93,6 @@ const info = [
             const message = fsfunc.read("README.md"); 
             console.log(message); 
         });
-
-        // REQUIRED DATA
-        // Title
-        // Description
-        // Table of Contents
-        // Installation
-        // Usage
-        // License
-        // Contributing
-        // Tests
-        // Questions
 
     // const info = [
     //     {
