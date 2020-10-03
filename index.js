@@ -78,8 +78,7 @@ const info = [
             fsfunc.append("README.md", "## How to Contribute:" + "\n" + response.contributing + "\n" ); 
             fsfunc.append("README.md", "## Authors: " + "\n" + response.authors + "\n" ); 
             fsfunc.append("README.md", "## Run Tests: " + "\n" + response.tests + "\n" ); 
-            // fsfunc.append("README.md", "## Contact Info" + "\n" + "![alt text](" + response.questions1 + ")" + "\n" ); 
-            fsfunc.append("README.md", "\n" + response.questions1 + "\n" ); 
+            fsfunc.append("README.md", "##Email:" + "\n" + response.questions1 + "\n" ); 
             const message = fsfunc.read("README.md"); 
             console.log(message); 
         });
