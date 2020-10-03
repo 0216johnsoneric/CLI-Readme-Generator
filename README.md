@@ -1,24 +1,21 @@
-# Username:
-Eric
+# Eric
 ## Title: 
-Hello
+Yes
 ### Description:
-Hello there
+Ok
 ## Table of Contents:
-- e
-- t
-- y
-## Installation Istructions:
-ok
-## Usage:
-yup
+- O
+- K
+- E
+### Installation Istructions:
+Yes
+### Usage:
+Ok
 ## License:
 MIT License
-## How to Contribute:
-ok
-## Authors: 
-undefined
-## Run Tests: 
+### How to Contribute:
+Ok
+### Run Tests: 
 Yes
 ## Email:
-erty
+Eric
