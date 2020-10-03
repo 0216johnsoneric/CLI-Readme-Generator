@@ -63,7 +63,7 @@ const info = [
     inquirer
         .prompt(info).then((response) => { 
             //Overwrite previous README.md file starting with New User:
-            fs.writeFileSync("README.md", ("#Username:" + '\n' + response.user) + '\n', (err) => { 
+            fs.writeFileSync("README.md", ("# Username:" + '\n' + response.user + '\n') (err) => { 
                 if(err) {  
                     return console.log(err);  
                 } 
