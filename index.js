@@ -74,6 +74,9 @@ const info = [
 
     inquirer
         .prompt(info).then((response) => { 
+            output = `
+                Hello World!
+            `
             //Overwrite previous README.md file starting with New User:
             fs.writeFileSync("README.md", ("### " + response.user + '\n'), (err) => { 
                 if(err) {  
@@ -90,7 +93,8 @@ const info = [
             newfunc.append("README.md", "### How to Contribute:" + "\n" + response.contributing + "\n" ); 
             newfunc.append("README.md", "### Run Tests: " + "\n" + response.tests + "\n" ); 
             newfunc.append("README.md", "## Email:" + "\n" + response.questions1 + "\n" ); 
-            const message = newfunc.read("README.md"); 
+            const message = newfunc.read("README.md");
+            console.log(output) 
             console.log(message); 
         });
 
