@@ -1,8 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Fsfunc = require("./fsfunc");
+const Newfunc = require("./newfunc");
 
-const fsfunc = new Fsfunc();
+const newfunc = new Newfunc();
 
 // REQUIRED INFO
 // Title
@@ -81,16 +81,16 @@ const info = [
                 } 
                 console.log("Hurray!");  
             });
-            fsfunc.append("README.md", "# Title:" + " " + response.title + "\n");
-            fsfunc.append("README.md", "### Description:" + "\n" + response.description + "\n" ); 
-            fsfunc.append("README.md", "## Table of Contents:" + "\n" + "- " + response.contents.split(", ").join("\n" + "- ") + "\n");
-            fsfunc.append("README.md", "### Installation Istructions:" + "\n" + response.installation + "\n" ); 
-            fsfunc.append("README.md", "### Usage:" + "\n" + response.usage + "\n" ); 
-            fsfunc.append("README.md", "## License:" + "\n" + response.license + "\n" ); 
-            fsfunc.append("README.md", "### How to Contribute:" + "\n" + response.contributing + "\n" ); 
-            fsfunc.append("README.md", "### Run Tests: " + "\n" + response.tests + "\n" ); 
-            fsfunc.append("README.md", "## Email:" + "\n" + response.questions1 + "\n" ); 
-            const message = fsfunc.read("README.md"); 
+            newfunc.append("README.md", "# " + " " + response.title + "\n");
+            newfunc.append("README.md", "### Description:" + "\n" + response.description + "\n" ); 
+            newfunc.append("README.md", "## Table of Contents:" + "\n" + "- " + response.contents.split(", ").join("\n" + "- ") + "\n");
+            newfunc.append("README.md", "### Installation Istructions:" + "\n" + response.installation + "\n" ); 
+            newfunc.append("README.md", "### Usage:" + "\n" + response.usage + "\n" ); 
+            newfunc.append("README.md", "## License:" + "\n" + response.license + "\n" ); 
+            newfunc.append("README.md", "### How to Contribute:" + "\n" + response.contributing + "\n" ); 
+            newfunc.append("README.md", "### Run Tests: " + "\n" + response.tests + "\n" ); 
+            newfunc.append("README.md", "## Email:" + "\n" + response.questions1 + "\n" ); 
+            const message = newfunc.read("README.md"); 
             console.log(message); 
         });
 
