@@ -86,7 +86,7 @@ const info = [
             newfunc.append("README.md", "## Table of Contents:" + "\n" + "- " + response.contents.split(", ").join("\n" + "- ") + "\n");
             newfunc.append("README.md", "### Installation Istructions:" + "\n" + response.installation + "\n" ); 
             newfunc.append("README.md", "### Usage:" + "\n" + response.usage + "\n" ); 
-            newfunc.append("README.md", "## License:" + "\n" + response.license + "\n" ); 
+            newfunc.append("README.md", "### License:" + "\n" + response.license + "\n" ); 
             newfunc.append("README.md", "### How to Contribute:" + "\n" + response.contributing + "\n" ); 
             newfunc.append("README.md", "### Run Tests: " + "\n" + response.tests + "\n" ); 
             newfunc.append("README.md", "## Email:" + "\n" + response.questions1 + "\n" ); 
