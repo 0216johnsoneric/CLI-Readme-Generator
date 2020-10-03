@@ -84,70 +84,70 @@ const fs = require("fs");
     inquirer
         .prompt(info).then(response => {
             
-            fs.writeFile("example.txt", ("Username:" + " " + response.user) + '\n', (err) => {
+            fs.writeFileSync("example.txt", ("Username:" + " " + response.user) + '\n', (err) => {
                 if(err) {
                     return console.log(err);
                 }
             console.log("Hurray!");
             });
 
-            fs.appendFile("example.txt", ("Title:" + " " + response.title) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("#Title:" + " " + response.title) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             });
 
-            fs.appendFile("example.txt", ("Description:" + " " + response.description) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Description:" + " " + response.description) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             });
 
-            fs.appendFile("example.txt", ("Instructions for installation:" + " " + response.contents) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Instructions for installation:" + " " + response.contents) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             }); 
 
-            fs.appendFile("example.txt", ("Table of Contents:" + " " + response.installation) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Table of Contents:" + " " + response.installation) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             }); 
 
-            fs.appendFile("example.txt", ("Description of usage:" + " " + response.usage) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Description of usage:" + " " + response.usage) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             }); 
 
-            fs.appendFile("example.txt", ("Select a License:" + " " + response.license) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Select a License:" + " " + response.license) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             }); 
 
-            fs.appendFile("example.txt", ("Contributing Rules:" + " " + response.contributing) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Contributing Rules:" + " " + response.contributing) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             });
 
-            fs.appendFile("example.txt", ("Run Tests:" + " " + response.tests) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Run Tests:" + " " + response.tests) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Hurray!");
             });
 
-            fs.appendFile("example.txt", ("Enter Email:" + " " + response.questions1) + '\n', (err) => {
+            fs.appendFileSync("example.txt", ("Enter Email:" + " " + response.questions1) + '\n', (err) => {
                 if (err) {
                     return console.log(err);
                 }
