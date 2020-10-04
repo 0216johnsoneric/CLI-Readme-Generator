@@ -98,75 +98,7 @@ const info = [
             console.log(message); 
         });
 
-    // const info = [
-    //     {
-    //         type: "input",
-    //         message: "Enter your Username:",
-    //         name: "user",
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "Enter the Title of your project:",
-    //         name: "title",
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "Write a Project Description:",
-    //         name: "description",
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "Select Table of Contents:",
-    //         name: "contents",  
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "Instructions for installation:",
-    //         name: "installation",
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "Description of usage:",
-    //         name: "usage",
-    //     },
-    //     {
-    //         type: "checkbox",
-    //         message: "Select a License:",
-    //         name: "license", 
-    //         choices: [
-    //             "Apache License 2.0",
-    //             "MIT License",
-    //             "Mozilla Public License 2.0",
-    //             "Eclipse Public License 2.0",
-    //         ]
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "Contributing Rules:",
-    //         name: "contributing", 
-    //     },
-    //     {
-    //         type: "checkbox",
-    //         message: "Run Tests:",
-    //         name: "tests", 
-    //         choices: [
-    //             "Yes",
-    //             "No",
-    //         ]
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "Contributing Rules:",
-    //         name: "contributing", 
-    //     },
-    //     {
-    //         type: "input",
-    //         message: "What is your Email:",
-    //         name: "questions1",
-    //     },
-    //     ]
-    //     console.clear();
-
+    
     // inquirer
     //     .prompt(info).then(response => {
             
