@@ -1,22 +1,22 @@
 ### Eric
 #  CLI README.md
 ### Description:
-Generates a quick readme file for your github!
+Generates a README.md file
 ## Table of Contents:
 - Install
 - Usage
-- Licence
+- License
 - Contributing Info
 - Tests
 - Email
 ### Installation Istructions:
 git clone
 ### Usage:
-Used to generate README.md
+Generate a README.md
 ### License:
 Apache License
 ### How to Contribute:
-Anyone can contribute
+Anyone can contribute 
 ### Run Tests: 
 Yes
 ## Email:

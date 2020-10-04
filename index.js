@@ -83,7 +83,7 @@ const info = [
                 console.log("Hurray!");  
             });
 
-            // Append addition info to new file using helper prototype function
+            // Append additional info to new file using helper prototype function
             newfunc.append("README.md", "# " + " " + response.title + "\n");
             newfunc.append("README.md", "### Description:" + "\n" + response.description + "\n" ); 
             newfunc.append("README.md", "## Table of Contents:" + "\n" + "- " + response.contents.split(", ").join("\n" + "- ") + "\n");
