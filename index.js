@@ -1,10 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const Newfunc = require("./newfunc");
-
 const newfunc = new Newfunc();
 
 // REQUIRED INFO
+// Username or Name
 // Title
 // Description
 // Table of Contents
@@ -14,7 +14,6 @@ const newfunc = new Newfunc();
 // Contributing
 // Tests
 // Questions
-
 
 const info = [
     {   
@@ -48,10 +47,11 @@ const info = [
         message: "Describe the Usage:", 
     }, 
     { 
-        type: "checkbox", 
-        message: "Choose a License:", 
+        type: "checkbox",  
         name: "license", 
-        choices: ["MIT License", "Apache License", "Eclipse Public License", "Mozilla Public License", ],
+        message : "Choose a License:",
+        choices : ["Apache License", "MIT License", "Eclipse Public License", "Mozilla Public License"],
+
     }, 
     { 
         type: "input", 
@@ -74,9 +74,7 @@ const info = [
 
     inquirer
         .prompt(info).then((response) => { 
-            output = `
-                Hello World!
-            `
+            
             //Overwrite previous README.md file starting with New User:
             fs.writeFileSync("README.md", ("### " + response.user + '\n'), (err) => { 
                 if(err) {  
@@ -84,6 +82,8 @@ const info = [
                 } 
                 console.log("Hurray!");  
             });
+
+            // Append addition info to new file using helper prototype function
             newfunc.append("README.md", "# " + " " + response.title + "\n");
             newfunc.append("README.md", "### Description:" + "\n" + response.description + "\n" ); 
             newfunc.append("README.md", "## Table of Contents:" + "\n" + "- " + response.contents.split(", ").join("\n" + "- ") + "\n");
@@ -94,7 +94,7 @@ const info = [
             newfunc.append("README.md", "### Run Tests: " + "\n" + response.tests + "\n" ); 
             newfunc.append("README.md", "## Email:" + "\n" + response.questions1 + "\n" ); 
             const message = newfunc.read("README.md");
-            console.log(output) 
+    
             console.log(message); 
         });
 
@@ -240,19 +240,5 @@ const info = [
     //             console.log("Hurray!");
     //         });
     //     });
-        // Title
-        // Description
-        // Table of Contents
-        // Installation
-        // Usage
-        // License
-        // Contributing
-        // Tests
-        // Questions
-        
-    // ])
-    // .then(response => {
-    //     fs.writeFile("example.txt", response.answer, (err) => {
-    //         if(err) throw err
-    //     })
-    // })
+      
+  

@@ -1,20 +1,23 @@
-### Er
-#  sdf
+### Eric
+#  CLI README.md
 ### Description:
-dsfg
+Generates a quick readme file for your github!
 ## Table of Contents:
-- f
-- fd
-- df
+- Install
+- Usage
+- Licence
+- Contributing Info
+- Tests
+- Email
 ### Installation Istructions:
-sdf
+git clone
 ### Usage:
-gr
+Used to generate README.md
 ### License:
-MIT License
+Apache License
 ### How to Contribute:
- serf
+Anyone can contribute
 ### Run Tests: 
 Yes
 ## Email:
-sdfs
+eric@gmail.com
