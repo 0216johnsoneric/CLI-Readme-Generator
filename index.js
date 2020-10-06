@@ -64,8 +64,8 @@ const info = [
         message: "Run Tests:",
         choices: ["Yes", "No"]
     }, 
-    { type: 
-        "input", 
+    { 
+        type: "input", 
         name: "questions1", 
         message: "Enter email", 
     }, 
