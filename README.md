@@ -9,7 +9,7 @@ Generates a fast and easy to use CLI README.md generator
 - Contribute
 - Tests
 - Email
-### Installation Istructions:
+### Installation Instructions:
 git clone 
 ### Usage:
 CLI README.md generator
