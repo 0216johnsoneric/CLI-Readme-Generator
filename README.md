@@ -1,20 +1,20 @@
-### Eric
-#  CLI README.md
+### [![Generic Badge](https://img.shields.io/badge/User-Eric-blue)](https://github.com/0216johnsoneric) 
+#  CLI README.md Generator
 ### Description:
-Generates a README.md file
+Generates a fast and easy to use CLI README.md generator
 ## Table of Contents:
 - Install
 - Usage
-- License
-- Contributing Info
+- Licence
+- Contribute
 - Tests
 - Email
 ### Installation Istructions:
-git clone
+git clone 
 ### Usage:
-Generate a README.md
-### License:
-Apache License
+CLI README.md generator
+### License: 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ### How to Contribute:
 Anyone can contribute 
 ### Run Tests: 
