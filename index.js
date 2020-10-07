@@ -96,7 +96,7 @@ const info = [
                 newfunc.append("README.md", "# " + " " + response.title + "\n");
                 newfunc.append("README.md", "### Description:" + "\n" + response.description + "\n" ); 
                 newfunc.append("README.md", "## Table of Contents:" + "\n" + "- " + response.contents.split(", ").join("\n" + "- ") + "\n");
-                newfunc.append("README.md", "### Installation Istructions:" + "\n" + response.installation + "\n" ); 
+                newfunc.append("README.md", "### Installation Instructions:" + "\n" + response.installation + "\n" ); 
                 newfunc.append("README.md", "### Usage:" + "\n" + response.usage + "\n" ); 
             
                 // WHEN I choose a license for my application from a list of options THEN a badge for that license is added.
